@@ -3,9 +3,13 @@ declared-services:
   tone-analyzer-service:
     label: tone_analyzer
     plan: beta
+  Concept Insights-ha:
+    label: concept_insights
+    plan: standard
 applications:
 - services:
   - tone-analyzer-service
+  - Concept Insights-ha
   name: cognitive-marketing-insights
   command: node app.js
   path: .
